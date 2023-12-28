@@ -7,4 +7,5 @@ import tn.esprit.massoudfardiexblanc.DAO.Entities.Foyer;
 import java.util.List;
 
 public interface FoyerRepo extends JpaRepository<Foyer,Long> {
+    Foyer findByNomFoyer(String nomFoyer);
 }
